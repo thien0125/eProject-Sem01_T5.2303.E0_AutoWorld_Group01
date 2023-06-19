@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>02_Itemlist</title>
+</head>
+<body>
+    <header
+        
+    </header>
+    <section>
+
+        <!--Form input data-->
+            <form name="myForm" class="form-horizontal" action="" onsubmit="">
+
+            <!--Brand-->   
+                <div class="form-group">
+                    <label class="control-label col-lg-3" for="name">Brand:</label>
+                    <div class="col-lg-7">          
+                        <input  type="text" class="form-control" id="Brand" name="Brand"
+                                placeholder="Enter brand" autofocus required
+                                ng-model="Brand" >
+                        <span style="color:red" ng-hide="myForm.Brand.$valid">Brand cannot left blank.</span>
+                    </div>
+                </div>
+
+            <!--Model-->
+                <div class="form-group">
+                    <label class="control-label col-lg-3" for="name">Model:</label>
+                    <div class="col-lg-7">          
+                        <input  type="text" class="form-control" id="Model" name="Model"
+                                placeholder="Enter model" autofocus required
+                                ng-model="Model" >
+                        <span style="color:red" ng-hide="myForm.Model.$valid">Model cannot left blank.</span>
+                    </div>
+                </div>
+            
+            <!--Price-->
+                <div class="form-group">
+                    <label class="control-label col-lg-3" for="name">Price:</label>
+                    <div class="col-lg-7">          
+                        <input type="number" class="form-control" id="Price" name="Price"
+                             placeholder="Enter price" autofocus required
+                             ng-model="Price" >
+                        <span style="color:red" ng-hide="myForm.Price.$valid">Price cannot left blank.</span>
+                    </div>
+                </div>
+
+            <!--Submit | Reset-->
+                <div class="form-group">        
+                    <div class="col-lg-offset-3 col-lg-7">
+                        <!--user addData()-->
+                        <button type="submit" class="btn btn-default"
+                                ng-click="addData()">Save
+                        </button>
+                        <button type="submit" class="btn btn-default"
+                                ng-click="updateData()" 
+                                ng-disabled="myForm.Brand.$invalid ||  
+                                myForm.Model.$invalid|| myForm.Price.$invalid">Update
+                        </button>
+                        <button type="reset" class="btn btn-default" >Reset
+
+                        </button>
+                    </div>
+                </div>
+            </form>
+           
+          
+
+        <!--Table datalist-->
+        <table class="table table-bordered table-hover">
+            <thead>
+                <tr>
+                    <th >Stt</th>
+                    <th ng-click="sortData('Brand')">Brand</th>
+                    <th ng-click="sortData('Model')">Model</th>
+                    <th ng-click="sortData('Price')">Price</th>
+                    <th>Function</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="data in database | filter: txtSearch | orderBy: sort.cot: sort.descending">
+                    <th>{{data.Stt}}</th>
+                    <th ng-click="fillInputs(data)">{{data.Brand}}</th>
+                    <th ng-click="fillInputs(data)">{{data.Model}}</th>
+                    <th ng-click="fillInputs(data)">{{data.Price}}</th>
+                    <th>
+                        <!--user deleteData()-->
+                        <a href="#" ng-click="deleteData(data)">Delete</a>
+                    </th>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <footer></footer>
+</body>
+</html>

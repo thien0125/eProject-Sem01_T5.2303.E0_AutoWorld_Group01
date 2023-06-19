@@ -1,0 +1,21 @@
+
+[
+    {
+        "Stt":0,
+        "Brand":"Vsmart", 
+        "Model":"Aris Pro",
+        "Price": 7000
+    },
+    {
+        "Stt":1,
+        "Brand":"Samsung",
+        "Model":"Galaxy Note 9",
+        "Price": 11000
+    },
+    {
+        "Stt":2,
+        "Brand":"BPhone",
+        "Model":"B86",
+        "Price": 5000
+    }
+]
