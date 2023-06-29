@@ -1,21 +1,17 @@
-
 [
-    {
-        "Stt":0,
-        "Brand":"Vsmart", 
-        "Model":"Aris Pro",
-        "Price": 7000
-    },
-    {
-        "Stt":1,
-        "Brand":"Samsung",
-        "Model":"Galaxy Note 9",
-        "Price": 11000
-    },
-    {
-        "Stt":2,
-        "Brand":"BPhone",
-        "Model":"B86",
-        "Price": 5000
-    }
+    {"Brand":"Suzuki","Model":"Suzuki Ciaz","Seatingcapacity": "5", "Design": "Hatchback","Year": "2023","Origin":"Japan", "Image":"img/ciaz.png" ,"Color":"Black, Red, White","Area":"HCM" ,"Price": "22,700 $"},
+    {"Brand":"Suzuki","Model":"Suzuki Swift", "Seatingcapacity": "5", "Design": "Sedan","Year": "2023","Origin":"Thailand", "Image":"img/suzukiswift.png" ,"Color":"Black, Red, White, Gray, Silver","Area":"HCM" ,"Price": "23,800 $"},
+    {"Brand":"Suzuki","Model":"Suzuki Ertiga", "Seatingcapacity": "7", "Design": "Sedan","Year": "2023","Origin":"Japan", "Image":"img/ertiga.png" ,"Color":"Black, Red, White, Silver","Area":"HCM" ,"Price": "22,900 $"},
+    {"Brand":"Suzuki","Model":"Suzuki XL7", "Seatingcapacity": "7", "Design": "MVP","Year": "2023","Origin":"Indo", "Image":"img/xl7.png" ,"Color":"Black, White, Gray, Orange","Area":"HCM" ,"Price": "25,500 $"},
+    {"Brand":"Suzuki","Model":"Suzuki Wagon R", "Seatingcapacity": "5", "Design": "SUV","Year": "2023","Origin":"Japan", "Image":"img/wagonR.png" ,"Color":"Black, Red, White, Silver","Area":"HCM" ,"Price": "9,400 $"},
+    
+    {"Brand":"Ford","Seatingcapacity": "5","Design": "MVP","Year": "2023","Origin":"USA", "Model":"Ford Ranger","Image":"img/ranger.png" ,"Color":"Black, Red, White","Area":"HCM" ,"Price": "29,800 $"},
+    {"Brand":"Ford","Seatingcapacity": "7","Design": "SUV","Year": "2023", "Origin":"Thailand","Model":"Ford Everest","Image":"img/everest.png" ,"Color":"Black, Red, White, Gray, Silver","Area":"HCM" ,"Price": "56,800 $"},
+    {"Brand":"Ford","Seatingcapacity": "5","Design": "SUV", "Year": "2023", "Origin":"China", "Model":"Ford Territory","Image":"img/territory.png" ,"Color":"Black, Red, White, Silver","Area":"HCM" ,"Price": "34,000 $"},
+    {"Brand":"Ford","Seatingcapacity": "7","Design": "SUV","Year": "2023", "Origin":"USA", "Model":"Ford Explorer","Image":"img/explorer.png" ,"Color":"Black, White, Gray, Orange","Area":"HCM" ,"Price": "106,300 $"},
+           
+    {"Brand":"Hyundai","Seatingcapacity": "7","Design": "SUV","Year": "2023", "Model":"Hyundai Santa Fe","Image":"img/santafe.png" ,"Color":"Black, Red, White, Blue, Gray, Silver","Area":"HCM" ,"Price": "63,800 $"},
+    {"Brand":"Hyundai","Seatingcapacity": "5","Design": "Hatchback","Year": "2023", "Model":"Hyundai i10","Image":"img/i10.png" ,"Color":"Black, Red, White, Gray, Silver","Area":"HCM" ,"Price": "15,300 $"},
+    {"Brand":"Hyundai","Seatingcapacity": "5","Design": "Sedan","Year": "2023", "Model":"Hyundai Elantra","Image":"img/elantra.png" ,"Color":"Black, Red, White, Silver","Area":"HCM" ,"Price": "25,500 $"},
+    {"Brand":"Hyundai","Seatingcapacity": "5","Design": "Sedan","Year": "2023", "Model":"Hyundai Accent","Image":"img/accent.png" ,"Color":"Black, White, Gray, Orange","Area":"HCM" ,"Price": "18,100 $"}
 ]
