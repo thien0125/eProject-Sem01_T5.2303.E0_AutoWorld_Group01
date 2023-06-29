@@ -1,0 +1,81 @@
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="Description" content="Enter your description here" />
+        <style>
+            td>img {
+                width: 100%;
+                height: 250px;
+                object-fit: contain;
+            }
+        </style>
+        <title>Title</title>
+    </head>
+
+    <body>
+        <h1 class="display-5 my-5 text-center">Compare cars</h1>
+        <div class="container">
+            <div class="col-md-9 mx-auto">
+                <table class="table">
+                    <tr class="bg-light">
+                        <th>Select Model</th>
+                        <th width="300px" ng-click="fillInputs(database[select1])">
+                            <select class="form-control" id="select1" ng-model="selectedOption1" ng-change="item1(selectedOption1)" >
+                                <option ng-repeat="data in database" value="{{data.value}}" \>{{data.Model}}</option>
+                            </select>
+                        </th>
+                        <th width="300px" ng-click="fillInputs(database[select2])">
+                            <select class="form-control" id="select2"  ng-model="selectedOption2" ng-change="item2(selectedOption2)" >
+                                <option ng-repeat="data in database" value="{{data.value}}" >{{data.Model}}</option>
+                            </select>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>Car Image</th>
+                        <td>
+                            <img id="Image1" ng-src="{{Image1}}">
+                        </td>
+                        <td>
+                            <img id="Image2" ng-src="{{Image2}}">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Brand</th>
+                        <td id="brand1">{{brand1}}</td>
+                        <td id="brand2">{{brand2}}</td>
+                    </tr>
+                    <tr>
+                        <th>Design</th>
+                        <td id="Design1">{{Design1}}</td>
+                        <td id="Design2">{{Design2}}</td>
+                    </tr>
+                    <tr>
+                        <th>Area</th>
+                        <td id="area1">{{area1}}</td>
+                        <td id="area1">{{area2}}</td>
+                    </tr>
+                    <tr>
+                        <th>Color</th>
+                        <td id="color1">{{color1}}</td>
+                        <td id="color2">{{color2}}</td>
+                    </tr>
+                    <tr>
+                        <th>Seatingcapacity</th>
+                        <td id="Seatingcapacity1">{{Seatingcapacity1}}</td>
+                        <td id="Seatingcapacity2">{{Seatingcapacity2}}</td>
+                    </tr>
+                    <tr>
+                        <th>Price</th>
+                        <td id="price1">{{price1}}</td>
+                        <td id="price2">{{price2}}</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </body>
+
+    </html>
