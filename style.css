@@ -11,18 +11,21 @@
         margin: 0;
         font-family: Arial, Helvetica, sans-serif;
     }
-
+    h1
+    {
+        font-size: 25px;  
+        color: orange;
+    }
     .topnav 
     {
         overflow: hidden;
-        border-top: 2px double blue ;
-        border-bottom: 2px double blue ;
+        border-top: 2px double orange ;
     }
 
     .topnav a 
     {
         float: left;
-        color: blue;
+        color: orange;
         text-align: center;
         padding: 14px 16px;
         text-decoration: none;
@@ -32,23 +35,156 @@
 
     .topnav a:hover 
     {
-        background-color: #ddd;
         color: black;
         transition: 2s;
     }
 
     .topnav a.active 
     {
-        background-color: grey;
         color: white;     
     }
 
-/* Others */
-    div footer 
+    /*banner*/
+    
+    .person 
     {
-        color: black;
+      border: 10px solid transparent;
+      margin-bottom: 25px;
+      width: 80%;
+      height: 80%;
+      opacity: 0.7;
     }
+    .person:hover 
+    {
+      border-color: #f1f1f1;
+    }
+    .carousel-inner img 
+    {
+      width: 100%; /* Set width to 100% */
+      margin: auto;
+    }
+    .carousel-caption h3 
+    {
+      color: #fff !important;
+    }
+    @media (max-width: 600px) 
+    {
+      .carousel-caption {
+        display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
+      }
+    }
+    .bg-1 
+    {
+      background: #2d2d30;
+      color: #bdbdbd;
+    }
+    .bg-1 h3 {color: #fff;}
+    .bg-1 p {font-style: italic;}
+    .list-group-item:first-child 
+    {
+      border-top-right-radius: 0;
+      border-top-left-radius: 0;
+    }
+    .list-group-item:last-child 
+    {
+      border-bottom-right-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+    .thumbnail 
+    {
+      padding: 0 0 15px 0;
+      border: none;
+      border-radius: 0;
+    }
+    .thumbnail p 
+    {
+      margin-top: 15px;
+      color: #555;
+    }
+    .btn 
+    {
+      padding: 10px 20px;
+      background-color: #333;
+      color: #f1f1f1;
+      border-radius: 0;
+      transition: .2s;
+    }
+    .btn:hover, .btn:focus 
+    {
+      border: 1px solid #333;
+      background-color: #fff;
+      color: #000;
+    }
+    .modal-header, h4, .close 
+    {
+      background-color: #333;
+      color: #fff !important;
+      text-align: center;
+      font-size: 30px;
+    }
+    .modal-header, .modal-body 
+    {
+      padding: 40px 50px;
+    }
+    
+    #googleMap 
+    {
+      width: 100%;
+      height: 400px;
+      -webkit-filter: grayscale(100%);
+      filter: grayscale(100%);
+    }  
+    
+    .open .dropdown-toggle 
+    {
+      color: #fff;
+      background-color: #555 !important;
+    }
+    .dropdown-menu li a 
+    {
+      color: #000 !important;
+    }
+    .dropdown-menu li a:hover 
+    {
+      background-color: red !important;
+    }
+
+/*payment page*/
+    ul 
+    {
+        list-style-type: none;
+        padding: 0;
+    }
+  
+  li 
+  {
+    margin-bottom: 10px;
+  }
+  
+  .bank-name {
+    font-weight: bold;
+  }
+
+/*footer*/
+footer a 
+    {
+      color: #f5f5f5;
+    }
+    footer a:hover {
+      color: #777;
+      text-decoration: none;
+    }  
+/* Others */
+
     div img 
     {
         max-width: 100%;
+    }
+    .form-control 
+    {
+      border-radius: 0;
+    }
+    textarea 
+    {
+      resize: none;
     }
