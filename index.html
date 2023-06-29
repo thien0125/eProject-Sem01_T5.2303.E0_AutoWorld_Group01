@@ -4,17 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>01_index</title>
+    <title>index</title>
 <!--Angular JS--> 
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script> <!--route đặt sau AJS trên-->
 <!--Jquery-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600' rel='stylesheet' type='text/css'>
 <!--Bootstrap-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 <!--Assignment resource-->
     <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <!--Chèn Controller-->
     <script src="myCtrl.js"></script>
 <!---->
@@ -33,21 +42,35 @@
         <br>
 
         <!--Menu-->
-        <div class="topnav">
-            <a  href="#/!">Home</a>
-            <a href="#">Utilities</a>
-            <a href="#!02_Itemlist">Products</a>
-            <a href="#">About us</a>
-        </div>
+            <div class="topnav" >
+                <a href="#/!"><img src="img/Autoworld_logo.png" style="width: 20%;"></a>
+                <a href="#/!" style="width: 15%;">Home</a>
+                <a href="#!02_Itemlist" style="width: 15%;">Products</a>
+                <a href="#!03_Comparison" style="width: 15%;">Comparison</a>
+                <a href="#!05_Contact">Contact</a>
+                <div class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" style="width: 15%;">Payment
+                        <span class="caret"></span>
+                    </a>    
+                    <div class="dropdown-menu dropdown-menu-right" style="position: absolute;">
+                        <a class="dropdown-item" href="04_Payment.html">List of bank</a>
+                        <a class="dropdown-item" href="04_1_Payment_honda.html">Payment for Honda</a>
+                        <a class="dropdown-item" href="04_2_Payment_suzuki.html">Payment for Suzuki</a>
+                        <a class="dropdown-item" href="04_3_Payment_toyota.html">Payment for Toyota</a>
+                    </div>
+                </div>
+            </div>
         <br>
+        
     </header>
     <section>
-
+        
         <!--chèn ng-view-->
         <div ng-view></div>      
     </section>
+    <br>
     <footer>
-        &copy; 2023 By me. All right reserved.
+        &copy; 2023 By AutoWorld. All right reserved.
     </footer>
 </body>
 </html>
