@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Payment</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+<section>
+  <h3>Here is a list of banks in Vietnam that may provide support for buying a car:
+  </h3>
+  <hr>
+  <div class="row">
+    <div class="col-sm-6" >
+      <img src="bank/acb.PNG" width="600" height="300" alt="acb">
+    </div>
+    <div class="col-sm-6" >
+      <img src="bank/vietcom.PNG" width="600" height="300" alt="vietcom">  
+    </div>
+  </div>
+  <hr>
+  <div class="row">
+    <div class="col-sm-6" >
+      <img src="bank/Agribank.PNG" width="600" height="300" alt="agribank">
+    </div>
+    <div class="col-sm-6" >
+      <img src="bank/bidv.PNG" width="600" height="300" alt="bidv">  
+    </div>
+  </div>
+  <hr>
+  <div class="row">
+    <div class="col-sm-6" >
+      <img src="bank/exim.PNG" width="600" height="300" alt="exim">
+    </div>
+    <div class="col-sm-6" >
+      <img src="bank/saocom.PNG" width="600" height="300" alt="saocom">  
+    </div>
+  </div>
+  <hr>
+  <div class="row">
+    <div class="col-sm-6" >
+      <img src="bank/techcom.PNG" width="600" height="300" alt="techcom">
+    </div>
+    <div class="col-sm-6" >
+      <img src="bank/viettin.PNG" width="600" height="300" alt="viettin">  
+    </div>
+  </div>
+  <hr>
+</section>
+
+<!-- Footer -->
+<footer class="text-center">
+  <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a><br><br>
+  <p> &copy: By Group1-T5.2303.E5. All Rights Reserved</p> 
+</footer>
+</body>
+</html>
